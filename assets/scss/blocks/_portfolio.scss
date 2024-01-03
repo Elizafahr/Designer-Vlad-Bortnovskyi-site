@@ -1,0 +1,28 @@
+.portfolio {
+  padding: 100px 0;
+  @include mediaTablet {
+    padding: 50px 0;
+  }
+  @include mid {
+    padding: 00px 0 50px 0;
+  }
+
+  &__title {
+    display: flex;
+    gap: 55px;
+    margin-bottom: 44px;
+
+    img {
+      object-fit: contain;
+      @include mid {
+        display: none;
+      }
+    }
+  }
+
+  &__cases {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+}

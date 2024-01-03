@@ -1,0 +1,19 @@
+.about{
+    .container{
+        margin-bottom: 80px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+
+        @include mediaTablet {
+            gap: 35px;
+            grid-template-columns:  1fr;
+        }
+    }
+    &__content{
+        display: flex;
+    flex-direction: column;
+    gap: 30px;
+    }
+}

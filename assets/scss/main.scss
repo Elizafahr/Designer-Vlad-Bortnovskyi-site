@@ -1,0 +1,16 @@
+//base
+@import './base/reset.scss';
+@import './base/vars.scss';
+@import './base/mixins.scss';
+@import './base/base.scss';
+
+//blocks
+
+@import './blocks/header';
+@import './blocks/nav-icon';
+@import './blocks/scroll';
+@import './blocks/portfolio';
+@import './blocks/case';
+@import './blocks/about';
+@import './blocks/social-media';
+@import './blocks/footer';

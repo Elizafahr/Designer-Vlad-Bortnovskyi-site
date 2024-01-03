@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Mazzard";
+  src: url("/./assets/fonts/Mazzard/MazzardH-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $dark-blue;
+  color: $white;
+  font-size: 16px;
+}
+a {
+  color: $white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.12;
+  &:hover {
+    color: $accent;
+  }
+}
+
+/* main-container */
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 25px 60px;
+  border-radius: 25px;
+}
+.btn-blue {
+  background-color: $accent;
+}
+.btn-border {
+  background-color: transparent;
+  border: 1px solid $accent;
+}
+.subtitle {
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  @include mediaTablet {
+    font-size: 21px;
+  }
+  @include mediaMobile {
+    font-size: 14px;
+  }
+  
+}
+.title-1 {
+  font-size: 95px;
+  font-weight: 600;
+  line-height: 1.03;
+
+  @include mediaTablet {
+    font-size: 85px;
+  }
+  @include mid {
+    font-size: 60px;  
+  }
+  @include mediaMobile {
+    font-size: 45px;
+  }
+  
+}
+.title-2 {
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 98px;
+
+  @include mediaTablet {
+    font-size: 65px;
+  }
+
+  @include mediaMobile {
+    font-size: 35px;
+  }
+  
+}
+.title-3 {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+
+  @include mediaTablet {
+    font-size: 35px;
+  }
+  @include mediaMobile {
+    font-size: 30px;
+  }
+}
+
+
+.blue-span {
+  color: $accent;
+}

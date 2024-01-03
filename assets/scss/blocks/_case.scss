@@ -1,0 +1,65 @@
+.case {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+
+  @include mediaTablet {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .image-case-container {
+    position: relative;
+    min-width: 49%;
+    img {
+      width: 100%;
+    }
+    .image-positioning-block {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+  }
+  .flex {
+    display: flex;
+    gap: 10px;
+  }
+  .case-sticker {
+    padding: 8px 15px;
+    border-radius: 53.416px;
+    border: 0.54px solid rgba(255, 255, 255, 0.1);
+    background: rgba(225, 225, 225, 0.435);
+  }
+
+  &__stickers {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  &__sticker {
+    padding: 7px 21px;
+    border-radius: 132.529px;
+    background: $grey-blue;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+  }
+}
+
+#button {
+  &:hover {
+    background-color: $accent;
+  }
+}
+.reverse {
+  @include mediaTablet {
+    flex-direction: column-reverse;
+  }
+}
